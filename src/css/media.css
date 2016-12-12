@@ -1,0 +1,470 @@
+@charset "utf-8";
+
+body{ font-family: "Microsoft YaHei","Arial","Hiragino Sans GB",Sans-Serif; font-size:13px; width: 100%; }
+
+@media screen and (max-width:1600px) {
+
+.tk_box{ margin:-267px 0 0 -487px}	
+
+}
+
+@media screen and (max-width:1366px) {
+
+
+
+.tk_box{ margin:-187px 0 0 -487px}
+
+.section ul li{ width:33%}
+
+.nav .prosemenu{ right:-500px;}
+
+
+.box{ width:54%;}
+
+.proshow_top .txt{ margin-left:2%}
+
+.nav .tteshu{ right:-285px}
+.content_case{ padding-top:26px;}
+
+
+
+}
+
+@media screen and (max-width:1300px) {
+
+.w1300{ width:96%; margin:0 auto}
+
+.w1025{ width:96%; margin:0 auto}
+
+
+
+.content_case{ width:96%; margin:0 auto}
+
+.w1016{width:96%; margin:0 auto}
+
+
+
+
+
+}
+
+@media screen and (max-width:1024px) {
+
+.top_m{ text-align:center; display:list-item}
+
+.bottom span{ display:block;}
+
+.bottom_i{ width:100%; margin-top:5px;}
+
+.ny_pro_right img{ width:100%; height:auto}
+
+.prolist_box3 h1{ font-size:35px;}
+
+.prolist_box3 h2{ font-size:24px;}
+
+.prolist_main h1{ font-size:35px;}
+
+.prolist_main h2{ font-size:24px;}
+
+.pt90{ padding:45}
+
+.left_button{ margin:106px 12px 0 0}
+
+.case_box img{ width:100%; height:auto}
+
+.mediashow img{ width:100%; height:auto}
+
+.ny_banner .txt{ top:22%;}
+
+.fangan_m ul{ padding:35% 0;}
+
+.media_box{ width:1024px;}
+
+#marquee{ width:100%;}
+
+
+
+.about_box2 img{ width:100% !important; height:auto !important}
+
+
+
+.card_main_6{ padding:63px 0 0 0}
+
+.divimg1{ right:5%}
+
+.divimg3 img{ width:100%; height:auto}
+
+.jt_main{ width:82%;}
+
+.jt_L{ display: block; margin:136px 0 0 36px; }
+
+.jt_R{ display: block; margin:136px 15px 0 0;}
+
+.nav .prosemenu{ right:-301px}
+
+.about_box li{ margin-left:23px}
+
+.prosemenu .fr dl{ width:31%; margin-left:2%}
+
+.view-next{ display:none}
+
+.honor_bottom{ min-height:1352px;}
+
+.honor-scroll ul{ width:100%!important;}
+
+.honor-scroll .scroll-obj{ height:auto!important;}
+
+.honor-scroll{ height:auto; overflow:inherit;}
+
+.honor-scroll li{ padding-top:25px; margin-right:32px;}
+
+}
+
+
+
+@media screen and (max-width:980px) {
+
+.about_box1 img{ width:100%; height:auto}
+
+.w_table img{ width:100%; height:auto}
+
+.contact_map img{ width:100%; height:auto}
+
+.fangan_m_b2 dl{ width:50%}
+
+.news_main li{ width:46%; margin:5% 4% 0 0}
+
+.about_box2 img{ width:100%; height:auto;}
+
+.jt_main_1{ width:100%;}
+
+.mics_main{ padding:54px 0;}
+
+.section ul li{ width:50%;}
+
+.about_box{ width:89%;}
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:880px) {
+
+.ny_pro_left{ width:31%;}
+
+.ny_pro_right{ width:62%; margin-left:5%}
+
+.pro_main li{ width:94%; margin:42px 0 0 0}
+
+.box{ width:100%}
+
+.proshow_top .txt{ width:100%}
+
+.back{ float:none}
+
+.ny_nav li{ padding:0 3%}
+
+.fangan_box1 img{ width:100% !important; height:auto !important}
+
+.w915{ width:96%;}
+
+.prolist img{ width:100%; height:auto}
+
+.pro_main_i{ width:80%}
+
+
+
+}
+
+@media screen and (max-width:750px) {
+
+.about_box1 img{ width:100%; height:auto}
+
+.layout{ display:none}
+
+#allnav{ background:#fff; display: block}
+
+.btn{ float:right; display:block; height:60px; line-height:60px; width:30px; background-image:url(..\images\menu.png); background-position:center; background-repeat: no-repeat; background-size:30px 20px; position:absolute; right:0px; z-index:9999; padding:0px; margin-right:15px; cursor:pointer}
+
+.btn ul{position:fixed;left:0px; top:60px; background:rgba(0,153,51,.8);  width:100%; display: none }
+
+.btn li{ height:30px; line-height:30px; text-align:left; border-bottom:1px solid #fff; padding:10px 0;  z-index:9999999; }
+
+.btn li a{ color:#fff; text-decoration:none; padding:0 0 0 30px}
+
+.about_box1 .fl{ width:100%;}
+
+.about_box1 .fr{ width:100%; margin-top:5%}
+
+.ny_nav li{ }
+
+.main_table{ font-size:14px;}
+
+
+
+.img_box img{ width:100%; height:auto;}
+
+.p_left_button{ display:none}
+
+.p_right_button{ display:none}
+
+.left_button{ display:none}
+
+.right_button{ display:none}
+
+.f_left_button{ display:none}
+
+.f_right_button{ display:none}
+
+#marquee2{ width:100%}
+
+#marquee1{ width:100%}
+
+#marquee{ width:100%}
+
+.card_main_3{ padding:27px 0 0 0}
+
+}
+
+@media screen and (max-width:640px) {
+
+	.ny_nav li{ font-size:14px; border-right:none; }
+
+.fangan_m_b1 img{ float:none; width:100%; height:auto;}
+
+.prolist_box3{ padding-top:53px;}
+
+.prolist_box3 .fl{ width:100%}
+
+.prolist_box3 .fr{ width:100%; margin-top:5%}
+
+.prolist_main .fl{ width:100%}
+
+.prolist_main .fr{ width:100%; margin-top:5%}
+
+.ny_banner .txt{ top:55px;}
+
+.ny_banner .txt h1{ font-size:25px;}
+
+.ny_banner .txt h2{ font-size:18px;}
+
+#nav_fix{ bottom:-43px}
+
+#container img{ width:100%; height:auto}
+
+.mics_main h1{ font-size:40px;}
+
+.mics_main_2 h1{ font-size:26px}
+
+.card_main_3 ul{ width:100%}
+
+.card_main_4 ul{ width:100%}
+
+.card_main_3 ul li{ margin:0 3px;}
+
+.card_main_4 ul li{ margin:0 3px;}
+
+.tttt{ left:58px; margin-left:0}
+
+.ttttt{ margin-right:0; right:58px}
+
+.content_pro{ padding-top:0}
+
+.mics_main_2{ padding-top:128px;}
+
+.divimg{ right:0}
+
+.card_main_6{ padding:23px 0 0 0}
+
+.divimg2{ bottom:-10px;}
+
+.card_main_4 h1{ font-size:26px;}
+
+.card_main_3 h1{ font-size:26px;}
+
+.card_main_6 h1{font-size:26px;}
+
+.card_main_7 h1{font-size:26px;}
+
+.card_main_2 h1{font-size:26px;}
+
+.card_main_1 h1{font-size:26px;}
+
+.card_main h1{font-size:26px;}
+
+.section ul li{ width:100%}
+
+.media_box{ width:98%;}
+
+#marquee{ width:95%;}
+
+.DB_tab25 .DB_imgSet{width:100%; margin-left:-206px}
+
+.DB_imgSet li img{ width:320px; }
+
+.pro_main_i h1{ font-size:25px;}
+
+.DB_tab25 .DB_menuWrap{display:none !important}
+
+.pro_main_i h2{ font-size:16px;}
+
+
+
+.jt_main{ width:62%;}
+
+.pro_main_i{ padding-top:25px;}
+
+.fangan_m ul{ width:90%}
+
+
+
+.fagnan_l{ position:absolute; left: 0; top: 17%;  width: 44%; height:auto;}
+
+#six_div{ height:1160px!important;}
+
+#six_div .about-view{top:0px; margin-top:0px;}
+
+#six_div .view-bg{ display:none;}
+
+.about_box li{ margin-top:15px;}
+
+#container{ width:auto}
+
+.contact_top h3 a{ display:block}
+
+.mics_main_1 h2{ font-size:21px;}
+
+.mics_main_1{ padding-top:61px;}
+
+.honor-scroll li{ width:48% !important; margin-right:5px}
+
+.news_main li{ height:auto}
+
+
+
+.down{ right:-4px}
+.page_title{width:auto;}
+
+
+
+}
+
+@media screen and (max-width:540px) {
+
+.fangan_m_b2 dl{ width:100%}
+
+.news_main li{ width:100%; }
+
+.section ul li{ width:100%}
+
+
+
+	}
+
+@media screen and (max-width:440px) {
+
+#marquee1 li img{ width:100%; height:auto;}
+
+.f_left_button{ margin:56px 0 0 0}
+
+.fangan_m_b3 li{ width:100%}
+
+.ny_pro_left{ width:100%;}
+
+.pro_bt{ text-align:left; }
+
+.pro_bt span{ margin-top:15%}
+
+.pro_main li .img img{ width:100%; height:auto}
+
+.ny_pro_right{ width:100%; margin-left:0}
+
+.page_left{ width:100%;}
+
+.page_right{ float:none; }
+
+.page_right li{ margin-top:5%}
+
+.proshow_top .txt{ margin:10% 0 0 0}
+
+.proshow_bottom ul{ background:none}
+
+.ny_nav li{ padding:0 1.5%}
+
+.ny_banner .txt{ top:25px;}
+
+.fangan_r{ width:50%}
+
+.g-tl h2{ font:bold 28px/80px Arial}
+
+.fangan_m h1{ font-size:28px}
+
+.pro_left a{ margin-top:39px;}
+
+.pro_right a{ margin-top:39px;}
+
+.DB_tab25 .DB_imgSet{width:100%; margin-left:-161px}
+
+.production-view{ margin-top:-231px !important}
+
+.culture-view{ margin-top:-251px !important}
+
+.history-view{ margin-top:-251px !important}
+
+
+
+.content_case{ padding-top:18px}
+
+.media_box{ padding-top:12px;}
+
+}
+
+
+
+@media screen and (max-width:360px) {
+
+.ny_nav li{ padding:0 }
+
+
+
+.g-tl h2{font:bold 28px/34px Arial}
+
+#six_div{ height:1732px!important;}
+
+.DB_tab25 .DB_imgSet{width:100%; margin-left:-151px}
+
+.logo{ left:5px;}
+
+.content_case{ padding-top:25px}
+
+.media_box{ padding-top:0}
+
+#marquee{ width:100%}
+
+.production-view{ margin-top:-211px !important}
+
+.pro_main_i h2{padding:13px 0 13px 0}
+
+.pro_left{ width:47%}
+
+.culture-view{ margin-top:-211px !important}
+
+.history-view{ margin-top:-211px !important}
+
+.honor_main img{ width:100%; height:auto}
+
+.ny_banner .txt{ top:0}
+
+.ny_banner .txt h2{ line-height:18px;}
+
+
+
+.about_box li{ margin-left:93px;}
+
+
+
+}	

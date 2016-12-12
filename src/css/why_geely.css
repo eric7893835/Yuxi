@@ -1,0 +1,282 @@
+.viewport-cont {
+
+	position: absolute;
+
+	top: 35%;
+
+	left: 50%;
+
+	width: 1300px;
+	
+	height:100%;
+
+	margin-left: -650px;
+
+}
+
+.view-next {
+
+	position: absolute;
+
+	left: 50%;
+
+	bottom: 30px;
+
+	z-index: 99;
+
+	width: 41px;
+
+	height: 41px;
+
+	margin-left: -20px;
+
+	background: url(..\images\why_geele_btn.png) no-repeat;
+
+}
+
+.view-next:hover {
+
+	opacity: .8;
+
+	filter: alpha(opacity=80);
+
+}
+
+.view-next2 {background-position: -41px 0;}
+
+.te{ margin:11px 0 0 4px;}
+
+.fixed-view-ico {
+
+	position: fixed;
+
+	_position: absolute;
+
+	left: auto;
+
+	right: 25px;
+
+	top: 50%;
+
+	z-index: 999;
+
+	width: 19px;
+
+	height: 135px;
+
+	margin-top: -46px; background:url(..\images\left_bg.png) no-repeat;
+
+}
+
+.fixed-view-ico a {
+
+	display: block;
+
+	width: 12px;
+
+	height: 12px;
+
+	margin-left: 4px;
+
+	margin-bottom: 4px;
+
+	background: url(..\images\why_geele_ico.png) no-repeat;
+
+	_background: url(..\images\why_geele_ico_ie6.png) no-repeat;
+
+}
+
+.fixed-view-ico a:hover, .fixed-view-ico .cur {
+
+	background-image: url(..\images\why_geely_ico_hover.png);
+
+	_background-image: url(..\images\why_geele_ico_hover_ie6.png);
+
+}
+
+
+
+/* 第一屏 */
+
+.brand-view {
+
+	
+
+	margin-top: -200px;
+
+}
+
+
+
+/* 第二屏 */
+
+.overview-view {
+
+	margin-top: -310px;
+
+}
+
+
+
+
+
+
+
+
+
+/*第 三屏  */
+
+.production-view {
+
+	margin-top: -260px;
+
+}
+
+
+
+
+
+/* 第四屏*/
+
+.culture-view {
+
+	margin-top: -270px;
+
+}
+
+
+
+
+
+/* 第五屏 */
+
+.history-view {
+
+	margin-top: -300px;
+
+}
+
+
+
+
+
+/* 第六屏 */
+
+.about-view{ margin-top:-290px;}
+
+
+
+
+
+
+
+.semenu {
+
+	position: absolute;
+
+	top: 64px;	
+
+	width: 950px;
+
+	height: 0;
+
+	right:-315px;
+
+	overflow: hidden;
+
+}
+
+.semenuMid a {
+
+	position: relative;
+
+	display: block;
+
+	height: 35px;
+
+	padding-left: 17px;
+
+	color: #888;
+
+	background: #f5f5f5;
+
+	font-size: 12px;
+
+	line-height: 34px;
+
+	border-bottom: 1px solid #fff;
+
+}
+
+.semenuMid a em {
+
+	display: block;
+
+	position: absolute;
+
+	left: 0;
+
+	bottom: 0;
+
+	width: 150px;
+
+	height: 1px;
+
+	overflow: hidden;
+
+	background: #e4e4e4;
+
+	line-height: 1px;
+
+	font-size: 1px;
+
+}
+
+.semenuMid a:hover {
+
+	color: #888;
+
+	background: #fff;
+
+}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+
+
+
+.viewport-cont{ width:1024px; margin-left:-512px;}
+
+}
+
+
+
+@media screen and (max-width:640px) {
+
+
+
+.viewport-cont{ width:640px; margin-left:-320px;}
+
+}
+
+@media screen and (max-width:414px) {
+
+
+
+.viewport-cont{ width:414px; margin-left:-212px;}
+
+}
+
+@media screen and (max-width:320px) {
+
+
+
+.viewport-cont{ width:320px; margin-left:-180px;}
+
+}
+
+
+
