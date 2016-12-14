@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>助通科技</title>
+
+<meta name="keywords" content="助通，手机短信，手机彩信，企业流量，语音验证" />
+
+<meta name="description" content="" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="../../../../../..\Apps\Tpl\default\Public\css\global.css" rel="stylesheet" type="text/css">
+
+<link href="../../../../../..\Apps\Tpl\default\Public\css\why_geely.css" rel="stylesheet" type="text/css">
+
+<link href="../../../../../..\Apps\Tpl\default\Public\css\style.css" rel="stylesheet" type="text/css">
+
+<!--<link href="../../../../../..\Apps\Tpl\default\Public\css\media.css" rel="stylesheet" type="text/css">-->
+<link rel="stylesheet" href="../../../../../..\Apps\Tpl\default\Public\js\Swiper\swiper-3.3.1.min.css">
+<link href="../../../../../..\Apps\Tpl\default\Public\css\A.css" rel="stylesheet" type="text/css">
+<link href="../../../../../..\Apps\Tpl\default\Public\css\Add.css" rel="stylesheet" type="text/css">
+<link href="../../../../../..\Apps\Tpl\default\Public\css\Mob.css" rel="stylesheet" type="text/css">
+
+
+
+
+<script type="text/javascript" src="../../../../../..\Apps\Tpl\default\Public\js\jquery-1.9.0.min.js"></script>
+
+<script src="../../../../../..\Apps\Tpl\default\Public\js\jquery.SuperSlide.2.1.1.js"></script> 
+
+
+<script src="../../../../../..\Apps\Tpl\default\Public\js\Swiper\swiper-3.3.1.min.js"></script>
+<script src="../../../../../..\Apps\Tpl\default\Public\js\P.js"></script> 
+<script>var imgw;</script>
+
+<script src="../../../../../..\Apps\Tpl\default\Public\js\media.js"></script>
+
+<script type="text/javascript">
+
+function filterArray(arr){
+
+		var newarr = new Array();
+
+		for(var i=0; i<arr.length; i++){
+
+			if($.inArray(arr[i],newarr)==-1){
+
+				newarr.push(arr[i]);
+
+			}
+
+		}
+
+		return newarr;
+
+	}
+
+
+
+
+
+
+
+var dataSource=[{province:'台湾',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'上海',city:'上海市',name:'上海助通信息科技有限公司上海总部',url:'www.ztinfo.cn',address:'上海市闵行区顾戴路2959号中展大厦3层',contact:'021-51366221 '},
+
+				{province:'山西',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'陕西',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'湖南',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'海南',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'澳门',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'西藏',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'内蒙古',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'贵州',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'安徽',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'四川',city:'成都',name:'',url:'',address:'',contact:''},
+
+				{province:'香港',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'广西',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'甘肃',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'湖北',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'广东',city:'广州',name:'',url:'',address:'',contact:''},
+
+				{province:'河南',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'北京',city:'北京',name:'上海助通信息科技有限公司北京分部',url:'www.ztinfo.cn',address:'北京西三旗上奥世纪中心2号楼A座508',contact:'010-82540023 '},
+
+				{province:'山东',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'江西',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'福建',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'天津',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'河北',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'黑龙江',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'吉林',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'辽宁',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'浙江',city:'',name:'',url:'',address:'',contact:''},
+
+				{province:'江苏',city:'南京',name:'',url:'',address:'',contact:''},
+
+				{province:'新疆',city:'',name:'',url:'',address:'',contact:''},
+
+ ];
+
+ 
+
+$(function(){
+
+	$(".tabbreadcrumb>ul>li>a").bind("click", function () {
+
+		$(this).parent().parent().find("li").removeClass("current");
+
+		$(this).parent().addClass("current");
+
+		$(".catalogue").hide().eq($(this).parent().index()).show();
+
+	});
+
+	
+
+	$(".tabbreadcrumb>ul>li").eq(0).find("a").click(); 
+
+	
+
+	$('#btn_close').click(function(){
+
+		zone_close();
+
+});
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	var provinces = $.map(dataSource,function(val){
+
+		return val.province;
+
+	});
+
+
+
+	provinces = filterArray(provinces);
+
+	
+
+	$.each(provinces,function(key,val){
+
+		$('#s1').append('<option value="'+val+'">'+val+'</option>');
+
+	})
+
+	
+
+	$('#s1').bind('change',function(){
+
+		var $v = $(this).val();
+
+		$('#s2').find('option:gt(0)').remove();
+
+		if($v==''){
+
+			zone_close();
+
+		}
+
+		else{
+
+			var result = $.grep(dataSource,function(val,key){
+
+				if(val.province == $v){
+
+					return true;
+
+				}
+
+				else{
+
+					return false;
+
+				}
+
+			});
+
+			var citys = $.map(result,function(val){
+
+				return val.city;
+
+			});
+
+			citys = filterArray(citys);
+
+			$.each(citys,function(key,val){
+
+				$('#s2').append('<option value="'+val+'">'+val+'</option>');
+
+			});
+
+			zone_show($v,'',1);
+
+		}
+
+	});
+
+	
+
+	$('#s2').bind('change',function(){
+
+		var $v = $(this).val();
+
+		if($v==''){
+
+			zone_close();
+
+		}
+
+		else{
+
+			zone_show($('#s1').val(),$v,2);
+
+		}
+
+	});
+
+	
+
+});
+
+
+
+function zone_close(){
+
+		$('#mylist').empty();
+
+		$('#myzone').hide();
+
+	}
+
+	
+
+	function zone_show(p,c,type){
+
+		$('#mylist').empty();
+
+		var result = null;
+
+		if(type == 1){
+
+			result = $.grep(dataSource,function(val,key){
+
+				if(val.province == p){
+
+					return true;
+
+				}
+
+				else{
+
+					return false;
+
+				}
+
+			});
+
+			
+
+		}
+
+		else{
+
+			result = $.grep(dataSource,function(val,key){
+
+				if(val.city == c){
+
+					return true;
+
+				}
+
+				else{
+
+					return false;
+
+				}
+
+			});
+
+		}
+
+
+
+		if(result == null){
+
+			zone_close();
+
+		}
+
+		
+
+		$.each(result,function(key,val){
+
+			$('#mylist').append('<tr><td class="one">'+val.city+'</td><td><table><tr><td>'+val.name+'</td></tr><tr><td><a href="_+val.url+_" target="_blank">'+val.address+'</a></td></tr><tr><td><a href="_+val.url+_" target="_blank">'+val.contact+'</a></td></tr></table></td></tr>');
+
+		});
+
+		
+
+		$('#mytitle').text(p+' '+c+' ');
+
+		
+
+		$('#myzone').show();
+
+	}
+
+
+
+function setProvince(p){
+
+	var $v = p;
+
+	if($v!=''){
+
+		$('#s2').find('option:gt(0)').remove();
+
+		$('#s1').find('option').removeAttr('selected');
+
+		$('#s1').find('option[value="'+p+'"]').attr('selected','selected');
+
+		
+
+		var result = $.grep(dataSource,function(val,key){
+
+			if(val.province == $v){
+
+				return true;
+
+			}
+
+			else{
+
+				return false;
+
+			}
+
+		});
+
+
+
+		$.each(result,function(key,val){
+
+			$('#s2').append('<option value="'+val.city+'">'+val.city+'</option>');
+
+		});
+
+
+
+		zone_show($v,'',1);
+
+	}
+
+}
+
+</script>
+
+<script>
+
+$(function(){
+
+	var imgh=$(window).width()*0.28;
+
+	var bannerh=parseInt(imgh);
+
+	$(".ny_banner").css("height",bannerh+"px");
+
+	$(".ny_banner").css("width",imgw+"px");
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div class="header-wrap">
+
+  <div id="MBox">
+<div id="MHeader">
+		<div class="MTit"></div>
+		<div class="MLogo Lmargin"><a href="../../../../../..\index.html"><img src="../../../../../..\Apps\Tpl\default\Public\images\logo.png" /></a></div>
+		<div class="MNav Rmargin"><img class="MMenu_Btn" src="../../../../../..\Apps\Tpl\default\Public\images\MMenu_Btn.png" /></div>
+		<div class="MMenu_Drop">
+			<ul class="MMenu_List ul">
+				<li class="MMenu_Item">
+					<a class="MMenu_Tit_a" href="../../../../../..\index.html">首页</a>
+					<div class="MMenu2_Drop"></div>
+				</li>
+				<li class="MMenu_Item">
+					<a class="MMenu_Tit_a" href="../../../../..\command\index\id\240\pid\245.html">解决方案</a>
+					<div class="MMenu2_Drop">
+						<!--<a href="../../../../..\command\index\id\240\pid\245.html">电子商务</a><br />
+						<a href="../../../../..\command\Internet\id\240\pid\246.html">互联网+</a><br />
+						<a href="../../../../..\command\energy\id\240\pid\247.html">物流行业</a><br />
+						<a href="../../../../..\command\education\id\240\pid\248.html">银行系统</a><br />
+						<a href="../../../../..\command\meeting\id\240\pid\249.html">医疗行业</a><br />
+						<a href="../../../../..\command\medical\id\240\pid\251.html">酒店餐饮</a><br />
+						<a href="../../../../..\command\bureau\id\240\pid\250.html">O2O</a><br />
+						<a href="../../../../..\command\radio\id\240\pid\252.html">P2P</a><br />-->
+					</div>
+				</li>
+				<li class="MMenu_Item">
+					<a class="MMenu_Tit_a" href="../../../../..\product\index\id\241\pid\253.html">产品中心</a>
+					<div class="MMenu2_Drop">
+						<!--<a href="index.php\product\index\id\241\pid\253.html">短信验证码</a><br />
+						<a href="index.php\product\tongyong\id\241\pid\254.html">行业营销短信</a><br />
+						<a href="index.php\product\tongyong\id\241\pid\255.html">行业手机彩信</a><br />
+						<a href="index.php\product\tongyong\id\241\pid\304.html">企业流量</a><br />
+						<a href="index.php\product\tongyong\id\241\pid\306.html">语音验证码</a><br />
+						<a href="index.php\product\tongyong\id\241\pid\307.html">国际业务</a><br />-->
+					</div>
+				</li>
+				<li class="MMenu_Item">
+					<a class="MMenu_Tit_a" href="../../../../..\case\index\id\242.html">应用案例</a>
+					<div class="MMenu2_Drop">
+						<!--<a href="../../../../..\case\lists\id\242\pid\310.html">电子商务</a><br /><a href="../../../../..\case\lists\id\242\pid\311.html">互联网+</a><br /><a href="../../../../..\case\lists\id\242\pid\312.html">物流行业</a><br /><a href="../../../../..\case\lists\id\242\pid\313.html">银行系统</a><br /><a href="../../../../..\case\lists\id\242\pid\314.html">医疗行业</a><br /><a href="../../../../..\case\lists\id\242\pid\315.html">酒店餐饮</a><br /><a href="../../../../..\case\lists\id\242\pid\316.html">O2O</a><br /><a href="../../../../..\case\lists\id\242\pid\317.html">P2P</a><br />-->
+					</div>
+				</li>
+				<li class="MMenu_Item">
+					<a class="MMenu_Tit_a" href="../../../../..\download\index\id\243.html">下载中心</a>
+					<div class="MMenu2_Drop">
+					</div>
+				</li>
+				<li class="MMenu_Item">
+					<a class="MMenu_Tit_a" href="../../../../../..\index.html">在线商城</a>
+					<div class="MMenu2_Drop">
+					</div>
+				</li>
+				<li class="MMenu_Item">
+					<a class="MMenu_Tit_a" href="../../../..\index\id\244\pid\259.html">关于助通</a>
+					<div class="MMenu2_Drop">
+					</div>
+				</li>
+				
+				
+			</ul>
+		</div>
+	</div>
+	<div class="MBg"></div>
+	<div id="Hold"></div>
+</div>
+<div class="header">
+  <div class="layout">
+    <div class="logo"><img src="../../../../../..\Apps\Tpl\default\Public\images\logo.png" class="png-" onclick="location=_\_.html" style="cursor:pointer;" /><!--<a href="../../../../../..\index.html" alt="Geely-" title="Geely-" class="png-"></a>--></div>
+    <ul class="nav" id="nav">
+      <li class="nav-tl"><a href="../../../../../..\index.html" >首页</a></li>
+      <li class="nav-tl"> <a href="../../../../..\command\index\id\240\pid\245.html" >解决方案</a>
+        <div class="sub fangan_nav tteshu">
+          <div class="fl">
+            <div class="img"> <img src="../../../../../..\Apps\Tpl\default\Public\images\nav_1.jpg"/> </div>
+            <div class="txt">
+              <h1>解决方案</h1>
+              <h2>助通科技专业的技术团队，实现在电子商务、互联网+、物流行业、银行系统、医疗行业、酒店餐饮、O2O、P2P等多方面的应用。<br />
+                &nbsp;</h2>
+            </div>
+          </div>
+          <div class="fr">
+            <ul class="nav_li">
+              <li><a href="../../../../..\command\index\id\240\pid\245.html">电子商务</a></li>
+              <li><a href="../../../../..\command\Internet\id\240\pid\246.html">互联网+</a></li>
+              <li><a href="../../../../..\command\energy\id\240\pid\247.html">物流行业</a></li>
+              <li><a href="../../../../..\command\education\id\240\pid\248.html">银行系统</a></li>
+              <li><a href="../../../../..\command\meeting\id\240\pid\249.html">医疗行业</a></li>
+              <li><a href="../../../../..\command\medical\id\240\pid\251.html">酒店餐饮</a></li>
+              <li><a href="../../../../..\command\bureau\id\240\pid\250.html">O2O</a></li>
+              <li><a href="../../../../..\command\radio\id\240\pid\252.html">P2P</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="nav-tl">
+	  <a href="../../../../..\product\index\id\241\pid\253.html">产品中心</a>
+        <div class="sub prosemenu">
+          <div class="fl">
+            <div class="top">
+              <div class="img"> <img src="../../../../../..\Uploads\2016\08\01\sjdx.jpg"/></div>
+              <div class="txt">
+                <h1>短信验证码</h1>
+                <h3>短信验证码，5秒必达</h3>
+                <a href="../../../../..\product\index\id\241\pid\253.html">learn more</a> </div>
+              <div class="clr"></div>
+            </div>
+            <div class="top mt26">
+              <div class="img"> <img src="../../../../../..\Uploads\2016\08\01\hyyxdx.jpg"/></div>
+              <div class="txt">
+                <h1>行业营销短信</h1>
+                <h3>行业营销短信，10秒即到</h3>
+                <a href="../../../../..\product\smart\id\241\pid\254.html">learn more</a> </div>
+              <div class="clr"></div>
+            </div>
+            
+          </div>
+		  <div class="fl">
+            <div class="top">
+              <div class="img"> <img src="../../../../../..\Uploads\2016\08\01\sjcx.jpg"/></div>
+              <div class="txt">
+                <h1>行业手机彩信</h1>
+                <h3>统一提交计费<br />
+                  多通道实现自动分发</h3>
+                <a href="../../../../..\product\tongyong\id\241\pid\255.html">learn more</a> </div>
+            </div>
+			<div class="top mt26">
+              <div class="img"> <img src="../../../../../..\Uploads\2016\08\01\qyll.jpg"/></div>
+              <div class="txt">
+                <h1>企业流量</h1>
+                <h3>定向流量（流量800）<br />
+                  通用流量（流量100）</h3>
+                <a href="../../../../..\product\tongyong\id\241\pid\304.html">learn more</a> </div>
+              <div class="clr"></div>
+            </div>
+          </div>
+          <div class="fl"> 
+            <div class="top">
+              <div class="img"> <img src="../../../../../..\Uploads\2016\08\01\yyyz.jpg"/></div>
+              <div class="txt">
+                <h1>语音验证</h1>
+                <h3>支持企业通讯录<br />
+                  个人通讯录的语音验证 </h3>
+                <a href="../../../../..\product\tongyong\id\241\pid\306.html">learn more</a> </div>
+              <div class="clr"></div>
+            </div>
+            <div class="top mt26">
+              <div class="img"> <img src="../../../../../..\Uploads\2016\08\01\gjyw.jpg"/></div>
+              <div class="txt">
+                <h1>国际业务</h1>
+                <h3>支持200多个国家地区<br />
+                  支持中英文编码 </h3>
+                <a href="../../../../..\product\tongyong\id\241\pid\307.html">learn more</a> </div>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-tl">
+	   <a href="../../../../..\case\index\id\242.html">应用案例</a>
+        <div class="sub fangan_nav">
+          <div class="fl">
+            <div class="img"> <img src="../../../../../..\Uploads\uploads\150825\1-150R5144550b8.jpg"/></div>
+            <div class="txt">
+              <h1>应用案例</h1>
+              <p>截止今天，助通科技已服务于8万个客户案例。</p>
+            </div>
+          </div>
+          <div class="fr">
+          <ul class="nav_li">
+              <li><a href="../../../../..\case\lists\id\242\pid\310.html">电子商务</a></li><li><a href="../../../../..\case\lists\id\242\pid\311.html">互联网+</a></li><li><a href="../../../../..\case\lists\id\242\pid\312.html">物流行业</a></li><li><a href="../../../../..\case\lists\id\242\pid\313.html">银行系统</a></li><li><a href="../../../../..\case\lists\id\242\pid\314.html">医疗行业</a></li><li><a href="../../../../..\case\lists\id\242\pid\315.html">酒店餐饮</a></li><li><a href="../../../../..\case\lists\id\242\pid\316.html">O2O</a></li><li><a href="../../../../..\case\lists\id\242\pid\317.html">P2P</a></li>         </ul>
+          </div>
+        </div>
+      </li>
+      <li class="nav-tl"> <a href="../../../../..\download\index\id\243.html">下载中心</a>
+        <div class="sub fangan_nav">
+          <div class="fl">
+            <div class="img"> <img src="../../../../../..\Uploads\2016\08\01\xzzx.1.jpg"/></div>
+            <div class="txt">
+              <h1>下载中心</h1>
+              <p>助通科技专业提供SMS行业短信、MMS行业彩信、企业流量统付、电信增值服务等移动信息化系统平台业务。</p>
+            </div>
+          </div>
+		  <div class="fr">
+          <ul class="nav_li">
+              <li><a href="../../../../..\download\lists\id\243\pid\318.html">服务类</a></li><li><a href="../../../../..\download\lists\id\243\pid\319.html">行业平台</a></li><li><a href="../../../../..\download\lists\id\243\pid\320.html">验证码平台</a></li><li><a href="../../../../..\download\lists\id\243\pid\321.html">综合SMS平台</a></li>         </ul>
+          </div>
+        </div>
+      </li>
+      <li class="nav-tl"> <a href="../../../../../..\index.html">在线商城</a>
+        <div class="sub fangan_nav">
+          <div class="fl">
+            <div class="img"> <img src="../../../../../..\Uploads\2016\08\01\zxsc.1.jpg"/></div>
+            <div class="txt">
+              <h1>在线商城</h1>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-tl"> <a href="../../../..\index\id\244\pid\259.html">关于助通</a>
+        <div class="sub fangan_nav">
+          <div class="fl">
+            <div class="img"> <img src="../../../../../..\Uploads\2016\08\01\gywm.1.jpg"/></div>
+            <div class="txt">
+              <h1>关于助通</h1>
+              <p>助通科技专业提供SMS行业短信、MMS行业彩信、企业流量统付、电信增值服务等移动信息化系统平台业务。</p>
+            </div>
+          </div>
+          <div class="fr">
+            <ul class="nav_li">
+              <li><a href="../../../..\index\id\244\pid\259.html">公司简介</a></li>
+			  <li><a href="../../../..\service\id\244\pid\309.html">公司理念</a></li>
+              <li><a href="../../../..\service\id\244\pid\260.html">合作流程</a></li>
+              <li><a href="../../../..\certificate\id\244\pid\261.html">公司资质</a></li>
+              <li><a href="../../../..\recruiting\id\244\pid\262.html">招贤纳士</a></li>
+              <li><a href="263.html">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <script type="text/javascript">
+
+        jQuery("#nav").slide({ type:"menu", titCell:".nav-tl", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+
+      </script>
+    
+  </div>
+</div>
+
+
+
+</div>
+
+<div class="ny_main">
+
+    <div class="ny_banner" style=" height:345px;background-image:url(/Uploads/uploads/150817/1-150QG05Q91R.png); background-position:top center; background-repeat: no-repeat; background-size:100%; ">
+
+  
+
+        <div class="txt">
+
+            <h1>联系我们</h1>
+
+            <h2>你可信赖的移动信息化系统服务商</h2>      
+
+        </div>
+
+        <div id="nav_fix">
+
+    <div class="scrollBar ny_nav" id="te_nav">
+
+        <div class="ny_li w1025">
+
+          <ul>
+
+            <li>
+
+                  <a  href="../../../..\index\id\244\pid\259.html">
+
+                    公司简介
+                  </a>
+
+                </li><li>
+
+                  <a  href="../../../..\service\id\244\pid\309.html">
+
+                    公司理念
+                  </a>
+
+                </li><li>
+
+                  <a  href="../../../..\hzlc\id\244\pid\260.html">
+
+                    合作流程
+                  </a>
+
+                </li><li>
+
+                  <a  href="../../../..\certificate\id\244\pid\261.html">
+
+                    公司资质
+                  </a>
+
+                </li><li>
+
+                  <a  href="../../../..\recruiting\id\244\pid\262.html">
+
+                    招贤纳士
+                  </a>
+
+                </li><li>
+
+                  <a  href="263.html">
+
+                    联系我们
+                  </a>
+
+                </li>
+          </ul>
+
+        </div>
+
+        <div class="clr"></div>
+
+    </div>
+
+</div>
+
+<div id="Sort">
+	<a  href="../../../..\index\id\244\pid\259.html">
+	公司简介	</a>　<a  href="../../../..\service\id\244\pid\309.html">
+	公司理念	</a>　<a  href="../../../..\hzlc\id\244\pid\260.html">
+	合作流程	</a>　<a  href="../../../..\certificate\id\244\pid\261.html">
+	公司资质	</a>　<a  href="../../../..\recruiting\id\244\pid\262.html">
+	招贤纳士	</a>　<a  href="263.html">
+	联系我们	</a>　</div>
+
+    </div>
+
+    <div class="contact_main">
+
+        <div class="contact_top">
+
+            <div class="w1025">
+
+              	<h1 class="ny_h1">联系我们<span>CONTACT US</span></h1>
+
+              	<h3 style="font-size:16px;font-family:&#39;microsoft yahei&#39;, arial, &#39;hiragino sans gb&#39;, sans-serif;font-weight:normal;color:#797979;text-align:center;margin:0px;line-height:30px;padding:0px;"><strong>上海助通信息科技有限公司上海总部</strong><br />联系电话：021-64063950&nbsp;/&nbsp;传真：021-64063950<br />联系地址：上海市闵行区顾戴路2959号中展大厦3层<br />网址&nbsp;web:&nbsp;www.ztinfo.cn&nbsp;<br /></h3><p><br /><br /></p><h3 style="font-size:16px;font-family:&#39;microsoft yahei&#39;, arial, &#39;hiragino sans gb&#39;, sans-serif;font-weight:normal;color:#797979;text-align:center;margin:0px;line-height:30px;padding:0px;"><strong>上海助通信息科技有限公司北京分部</strong><br />联系电话：010-82540023<br />联系地址：北京西三旗上奥世纪中心2号楼A座508<br />网址&nbsp;web:&nbsp;www.ztinfo.cn&nbsp;<br /></h3><h3 style="text-align:center"><img title="二微码.jpg" style="height:200px;width:200px" border="0" hspace="0" src="../../../../../..\Uploads\20160815\二微�_jpg" width="200" height="200" /><br /></h3>
+        	</div>
+
+        </div>
+
+        <div class="contact_map">
+
+            <div class="w1025">
+
+              	<h1 class="ny_h1">联系助通科技<span>CONTACT US</span></h1>
+
+                <div id="container">
+
+				    <div style="font-size:12px;margin-top:15px;margin-left:5px;">
+
+					    <div id="map_div"> 
+
+					      	<img id="map" name="map" usemap="#m_map" src="../../../../../..\Uploads\2016\06\24\576cdfb478c96.jpg" alt="">
+
+					        <div id="myzone" style="display: none;">
+
+						        <div style="height: 22px;"> 
+
+						          <img id="btn_close" style="cursor:pointer;float: right;margin: 11px 15px 0 0;" src="../../../../../..\Apps\Tpl\default\Public\images\close.png" alt="关闭"> 
+
+						        </div>
+
+						        <div id="bgm" style="padding-left: 20px; padding-right: 20px; padding-top: 0; padding-bottom: 0; ">
+
+						            <div id="mytitle" style="margin-bottom:10px;line-height:14px;font-size:14px;font-family:Microsoft YaHei;">黑龙江 </div>
+
+						            <div id="mycompany">
+
+						              <table id="mylist">
+
+						              </table>
+
+						            </div>
+
+						        </div>
+
+						        <div style="height: 15px;"> </div>
+
+					        </div>
+
+					    </div>
+
+				    </div>
+
+				    <map name="m_map" id="m_map">
+
+					    <area shape="rect" coords="552, 79, 601, 104" href="javascript:setProvince('黑龙江')" alt="">
+
+					    <area shape="rect" coords="542, 125, 579, 149" href="javascript:setProvince('吉林')" alt="">
+
+					    <area shape="rect" coords="523, 170, 554, 192" href="javascript:setProvince('辽宁')" alt="">
+
+					    <area shape="rect" coords="460, 181, 485, 197" href="javascript:setProvince('北京')" alt="">
+
+					    <area shape="rect" coords="472, 202, 499, 215" href="javascript:setProvince('天津')" alt="">
+
+					    <area shape="rect" coords="449, 221, 473, 233" href="javascript:setProvince('河北')" alt="">
+
+					    <area shape="rect" coords="113, 152, 162, 183" href="javascript:setProvince('新疆')" alt="">
+
+					    <area shape="rect" coords="246, 187, 291, 213" href="javascript:setProvince('甘肃')" alt="">
+
+					    <area shape="rect" coords="362, 178, 410, 207" href="javascript:setProvince('内蒙古')" alt="">
+
+					    <area shape="rect" coords="377, 276, 413, 298" href="javascript:setProvince('陕西')" alt="">
+
+					    <area shape="rect" coords="308, 324, 335, 342" href="javascript:setProvince('四川')" alt="">
+
+					    <area shape="rect" coords="366, 337, 399, 359" href="javascript:setProvince('重庆')" alt="">
+
+					    <area shape="rect" coords="364, 379, 393, 400" href="javascript:setProvince('贵州')" alt="">
+
+					    <area shape="rect" coords="295, 403, 321, 420" href="javascript:setProvince('云南')" alt="">
+
+					    <area shape="rect" coords="404, 479, 428, 493" href="javascript:setProvince('海南')" alt="">
+
+					    <area shape="rect" coords="392, 419, 420, 440" href="javascript:setProvince('广西')" alt="">
+
+					    <area shape="rect" coords="444, 421, 471, 435" href="javascript:setProvince('广东')" alt="">
+
+					    <area shape="rect" coords="418, 368, 448, 388" href="javascript:setProvince('湖南')" alt="">
+
+					    <area shape="rect" coords="500, 377, 530, 399" href="javascript:setProvince('福建')" alt="">
+
+					    <area shape="rect" coords="473, 350, 500, 367" href="javascript:setProvince('江西')" alt="">
+
+					    <area shape="rect" coords="419, 320, 449, 341" href="javascript:setProvince('湖北')" alt="">
+
+					    <area shape="rect" coords="481, 306, 506, 324" href="javascript:setProvince('安徽')" alt="">
+
+					    <area shape="rect" coords="523, 329, 550, 345" href="javascript:setProvince('浙江')" alt="">
+
+					    <area shape="rect" coords="544, 307, 569, 321" href="javascript:setProvince('上海')" alt="">
+
+					    <area shape="rect" coords="517, 280, 545, 303" href="javascript:setProvince('江苏')" alt="">
+
+					    <area shape="rect" coords="432, 278, 461, 298" href="javascript:setProvince('河南')" alt="">
+
+					    <area shape="rect" coords="415, 240, 439, 258" href="javascript:setProvince('山西')" alt="">
+
+					    <area shape="rect" coords="476, 243, 511, 265" href="javascript:setProvince('山东')" alt="">
+
+					    <area shape="rect" coords="142, 285, 168, 306" href="javascript:setProvince('西藏')" alt="">
+
+					    <area shape="rect" coords="234, 241, 274, 266" href="javascript:setProvince('青海')" alt="">
+
+					    <area shape="rect" coords="332, 233, 385, 258" href="javascript:setProvince('宁夏')" alt="">
+
+					    <area shape="rect" coords="540, 395, 577, 423" href="javascript:setProvince('台湾')" alt="">
+
+					    <area shape="rect" coords="477, 429, 520, 454" href="javascript:setProvince('香港')" alt="">
+
+					    <area shape="rect" coords="440, 447, 480, 477" href="javascript:setProvince('澳门')" alt="">
+
+				    </map>
+
+					</div>
+
+					<div align="center" style="width:400px;position:relative;left:400px"><h3 style="margin:0px;padding:0px;font-family:&#39;microsoft yahei&#39;, arial, &#39;hiragino sans gb&#39;, sans-serif;text-align:left;font-size:16px;line-height:30px;color:#797979;font-weight:normal;text-indent:0em;" dir="ltr"><strong>各部门邮箱</strong><br />市场部：marketing@ztinfo.cn<br />销售部：sales@ztinfo.cn <br />财务部：finance@ztinfo.cn<br />客服部：service@ztinfo.cn <br />技术部：technique@ztinfo.cn <br />人力资源部：resource@ztinfo.cn <br />人事部：hr@ztinfo.cn &nbsp; &nbsp;</h3></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="bottom" style="background:#f1f1f1">
+
+    <div class="w1025">
+
+        <span>Copyright ©2011-2016 <a href="..\index.html#">Copyright＠ 2011 - 2016 上海助通信息科技限公司  地址：上海市闵行区顾戴路2959号中展大厦3层</a></span>
+
+        <span class="bottom_i"><i class="icon_1"></i><a href="..\index.html#">zhuyunjie@ztinfo.cn </a><i class="icon_2"></i>400 008 7058</span>
+
+    </div>
+
+</div>
+<style>
+.qq{ /*position:fixed; top:11%; padding:10px; background-color:#FFF;*/}
+.qq_a{ display:block;}
+.qq_a img{ vertical-align:middle; margin-right:5px;}
+.qq_T{ background-color:#e3e3e3; padding:3px 10px;}
+.qq_D{ padding:5px; border:1px solid #d1d1d1;}
+
+.rides-cs {
+	font-size: 12px;
+	background: #29a7e2;
+	position: fixed;
+	top: 100px;
+	right: 0px;
+	_position: absolute;
+	z-index: 1500;
+	border-radius: 6px 0px 0 6px;
+}
+.rides-cs a {
+	color: #00A0E9;
+}
+.rides-cs a:hover {
+	color: #ff8100;
+	text-decoration: none;
+}
+.rides-cs .floatL {
+	width: 36px;
+	float: left;
+	position: relative;
+	z-index: 1;
+	margin-top: 21px;
+	height: 181px;
+}
+.rides-cs .floatL a {
+	font-size: 0;
+	text-indent: -999em;
+	display: block;
+}
+.rides-cs .floatR {
+	float: left;
+	overflow: hidden;
+}
+.rides-cs .floatR .cn {
+	background: #F7F7F7;
+	border-radius: 6px;
+	
+}
+.rides-cs .cn .titZx {
+	font-size: 14px;
+	color: #333;
+	font-weight: 600;
+	line-height: 24px;
+	padding: 5px;
+	text-align: center;
+}
+.rides-cs .cn ul {
+	padding: 0px;
+}
+.rides-cs .cn ul li {
+	line-height: 38px;
+	height: 38px;
+	border-bottom: solid 1px #E6E4E4;
+	overflow: hidden;
+	text-align: center;
+}
+.rides-cs .cn ul li span {
+	color: #777;
+}
+.rides-cs .cn ul li a {
+	color: #777;
+}
+.rides-cs .cn ul li img {
+	vertical-align: middle;
+}
+.rides-cs .btnOpen, .rides-cs .btnCtn {
+	position: relative;
+	z-index: 9;
+	top: 25px;
+	left: 0;
+	background-image: url(/Apps/Tpl/default/Public/images/lanrenzhijia.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 146px;
+	padding: 8px;
+}
+.rides-cs .btnOpen {
+	background-position: 0 0;
+}
+.rides-cs .btnCtn {
+	background-position: -37px 0;
+}
+.rides-cs ul li.top {
+	border-bottom: solid #ACE5F9 1px;
+}
+.rides-cs ul li.bot {
+	border-bottom: none;
+}
+</style>
+<div id="floatTools" class="rides-cs" style="height:246px;">
+	<div class="floatL"> <a id="aFloatTools_Show" class="btnOpen" title="" style="top:20px;display:block" href="javascript:void(0);">展开</a> <a id="aFloatTools_Hide" class="btnCtn" title="" style="top:20px;display:none" href="javascript:void(0);">收缩</a> </div>
+	<div id="divFloatToolsView" class="floatR" style="display: none;">
+		<div class="cn">
+			<div class="qq">
+	<div class="qq_I">
+		<div class="qq_T">销售咨询</div>
+		<div class="qq_D">
+			<a class="qq_a" href="http://wpa.qq.com/msgrd?v=3&uin=2880703354&site=qq&menu=yes"><img src="../../../../../..\Apps\Tpl\default\Public\images\qqIco.png" />上海一部1</a>
+			<a class="qq_a" href="http://wpa.qq.com/msgrd?v=3&uin=2880703360&site=qq&menu=yes"><img src="../../../../../..\Apps\Tpl\default\Public\images\qqIco.png" />上海一部2</a>
+			<a class="qq_a" href="http://wpa.qq.com/msgrd?v=3&uin=2880703355&site=qq&menu=yes"><img src="../../../../../..\Apps\Tpl\default\Public\images\qqIco.png" />上海二部1</a>
+			<a class="qq_a" href="http://wpa.qq.com/msgrd?v=3&uin=2880703363&site=qq&menu=yes"><img src="../../../../../..\Apps\Tpl\default\Public\images\qqIco.png" />上海二部2</a>
+			<a class="qq_a" href="http://wpa.qq.com/msgrd?v=3&uin=2880703362&site=qq&menu=yes"><img src="../../../../../..\Apps\Tpl\default\Public\images\qqIco.png" />北京分部1</a>
+			<a class="qq_a" href="http://wpa.qq.com/msgrd?v=3&uin=2880703365&site=qq&menu=yes"><img src="../../../../../..\Apps\Tpl\default\Public\images\qqIco.png" />北京分部2</a>
+		</div>
+	</div>
+	<div class="qq_I">
+		<div class="qq_T">售后服务</div>
+		<div class="qq_D">
+			<a class="qq_a" href="http://wpa.qq.com/msgrd?v=3&uin=2880703367&site=qq&menu=yes"><img src="../../../../../..\Apps\Tpl\default\Public\images\qqIco.png" />售后服务1</a>
+			<a class="qq_a" href="http://wpa.qq.com/msgrd?v=3&uin=2880703356&site=qq&menu=yes"><img src="../../../../../..\Apps\Tpl\default\Public\images\qqIco.png" />售后服务2</a>
+			<a class="qq_a" href="http://wpa.qq.com/msgrd?v=3&uin=2880703368&site=qq&menu=yes"><img src="../../../../../..\Apps\Tpl\default\Public\images\qqIco.png" />售后服务3</a>
+		</div>
+	</div>
+	<div class="qq_I">
+		<div class="qq_T">投诉建议</div>
+		<div class="qq_D">
+			<a class="qq_a" href="http://wpa.qq.com/msgrd?v=3&uin=2880703352&site=qq&menu=yes"><img src="../../../../../..\Apps\Tpl\default\Public\images\qqIco.png" />投诉建议</a>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		$("#aFloatTools_Show").click(function(){
+			$('#divFloatToolsView').animate({width:'show',opacity:'show'},0,function(){$('#divFloatToolsView').show();});
+			$('#aFloatTools_Show').hide();
+			$('#aFloatTools_Hide').show();				
+		});
+		$("#aFloatTools_Hide").click(function(){
+			$('#divFloatToolsView').animate({width:'hide', opacity:'hide'},0,function(){$('#divFloatToolsView').hide();});
+			$('#aFloatTools_Show').show();
+			$('#aFloatTools_Hide').hide();	
+		});
+	});
+	document.getElementsByClassName("ny_banner")[0].style.backgroundSize="100% 100%";
+</script> 
+
+
+
+</body>
+
+</html>
