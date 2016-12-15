@@ -30,7 +30,7 @@
 
 	margin-left: -20px;
 
-	background: url(..\images\why_geele_btn.png) no-repeat;
+	background: url(../images/why_geele_btn.png) no-repeat;
 
 }
 
@@ -64,7 +64,7 @@
 
 	height: 135px;
 
-	margin-top: -46px; background:url(..\images\left_bg.png) no-repeat;
+	margin-top: -46px; background:url(../images/left_bg.png) no-repeat;
 
 }
 
@@ -80,17 +80,17 @@
 
 	margin-bottom: 4px;
 
-	background: url(..\images\why_geele_ico.png) no-repeat;
+	background: url(../images/why_geele_ico.png) no-repeat;
 
-	_background: url(..\images\why_geele_ico_ie6.png) no-repeat;
+	_background: url(../images/why_geele_ico_ie6.png) no-repeat;
 
 }
 
 .fixed-view-ico a:hover, .fixed-view-ico .cur {
 
-	background-image: url(..\images\why_geely_ico_hover.png);
+	background-image: url(../images/why_geely_ico_hover.png);
 
-	_background-image: url(..\images\why_geele_ico_hover_ie6.png);
+	_background-image: url(../images/why_geele_ico_hover_ie6.png);
 
 }
 

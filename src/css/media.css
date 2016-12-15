@@ -188,7 +188,7 @@ body{ font-family: "Microsoft YaHei","Arial","Hiragino Sans GB",Sans-Serif; font
 
 #allnav{ background:#fff; display: block}
 
-.btn{ float:right; display:block; height:60px; line-height:60px; width:30px; background-image:url(..\images\menu.png); background-position:center; background-repeat: no-repeat; background-size:30px 20px; position:absolute; right:0px; z-index:9999; padding:0px; margin-right:15px; cursor:pointer}
+.btn{ float:right; display:block; height:60px; line-height:60px; width:30px; background-image:url(../images/menu.png); background-position:center; background-repeat: no-repeat; background-size:30px 20px; position:absolute; right:0px; z-index:9999; padding:0px; margin-right:15px; cursor:pointer}
 
 .btn ul{position:fixed;left:0px; top:60px; background:rgba(0,153,51,.8);  width:100%; display: none }
 

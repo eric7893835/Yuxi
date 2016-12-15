@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>助通科技</title>
+
+<meta name="keywords" content="助通，手机短信，手机彩信，企业流量，语音验证" />
+
+<meta name="description" content="" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="../css/global.css" rel="stylesheet" type="text/css">
+
+<link href="../css/why_geely.css" rel="stylesheet" type="text/css">
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<!--<link href="../css/media.css" rel="stylesheet" type="text/css">-->
+<link rel="stylesheet" href="../js/Swiper/swiper-3.3.1.min.css">
+<link href="../css/A.css" rel="stylesheet" type="text/css">
+<link href="../css/Add.css" rel="stylesheet" type="text/css">
+<link href="../css/Mob.css" rel="stylesheet" type="text/css">
+
+
+
+
+<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+
+<script src="../js/jquery.SuperSlide.2.1.1.js"></script> 
+
+
+<script src="../js/Swiper/swiper-3.3.1.min.js"></script>
+<script src="../js/P.js"></script> 
+<script>var imgw;</script><script type="text/javascript" src="../js/proshow.js"></script>
+<script>
+
+$(function(){
+
+    $(".first").click(function(){
+
+	      var id=$(this).attr("id");
+
+		  $(".first").each(function(){
+
+			   var did=$(this).attr("id");
+
+			   if(did==id){
+
+				   $(this).addClass("on");
+
+				   $(this).next(".menu_l").addClass("no");
+
+			   }else{
+
+				   $(this).removeClass("on");
+
+				   $(this).next(".menu_l").removeClass("no");
+
+			   }
+
+			   
+
+		  });
+
+	});
+
+	$(".second_a").click(function(){
+
+	      var id=$(this).attr("id");
+
+		  $(".second_a").each(function(){
+
+			   var did=$(this).attr("id");
+
+			   if(did==id){
+
+				   $(this).addClass("son");
+
+				   $(this).next(".third").show();
+
+			   }else{
+
+				   $(this).removeClass("son");
+
+				   $(this).next(".third").hide();
+
+			   }
+
+			   
+
+		  });
+
+	});
+
+});
+
+</script>
+<script src="../js/media.js"></script>
+<script>
+
+$(function(){
+
+	var imgh=$(window).width()*0.28;
+
+	var bannerh=parseInt(imgh);
+
+	$(".ny_banner").css("height",bannerh+"px");
+
+	$(".ny_banner").css("width",imgw+"px");
+
+});
+
+</script>
+</head>
+
+<body>
+<div class="header-wrap"> <div id="MBox">
+    <div id="MHeader">
+        <div class="MTit"></div>
+        <div class="MLogo Lmargin"><a href="index.html"><img src="images/logo.png" /></a></div>
+        <div class="MNav Rmargin"><img class="MMenu_Btn" src="images/MMenu_Btn.png" /></div>
+        <div class="MMenu_Drop">
+            <ul class="MMenu_List ul">
+                <li class="MMenu_Item">
+                    <a class="MMenu_Tit_a" href="index.html">首页</a>
+                    <div class="MMenu2_Drop"></div>
+                </li>
+                <li class="MMenu_Item">
+                    <a class="MMenu_Tit_a" href="e-commerce.html">解决方案</a>
+                    <div class="MMenu2_Drop">
+                        <!--<a href="e-commerce.html">电子商务</a><br />
+                        <a href="internet.html">互联网+</a><br />
+                        <a href="logistics.html">物流行业</a><br />
+                        <a href="banking-system.html">银行系统</a><br />
+                        <a href="medical-industry.html">医疗行业</a><br />
+                        <a href="catering.html">酒店餐饮</a><br />
+                        <a href="otoo.html">O2O</a><br />
+                        <a href="ptop.html">P2P</a><br />-->
+                    </div>
+                </li>
+                <li class="MMenu_Item">
+                    <a class="MMenu_Tit_a" href="">产品中心</a>
+                    <div class="MMenu2_Drop">
+                        <!--<a href="sms-test.html">短信验证码</a><br />
+                        <a href="marketing-sms.html">行业营销短信</a><br />
+                        <a href="mms.html">行业手机彩信</a><br />
+                        <a href="business-flow.html">企业流量</a><br />
+                        <a href="voice-verification.html">语音验证码</a><br />
+                        <a href="international-authentication.html">国际业务</a><br />-->
+                    </div>
+                </li>
+                <li class="MMenu_Item">
+                    <a class="MMenu_Tit_a" href="">应用案例</a>
+                    <div class="MMenu2_Drop">
+                        <!--<a href="ecommerce-case.html">电子商务</a><br />
+                        <a href="internet-case.html">互联网+</a><br />
+                        <a href="logistics-case.html">物流行业</a><br /
+                        <a href="black-case.html">银行系统</a><br />
+                        <a href="medical-case.html">医疗行业</a><br />
+                        <a href="catering-case.html">酒店餐饮</a><br />
+                        <a href="otoo-case.html">O2O</a><br />
+                        <a href="ptop-case.html">P2P</a><br />-->
+                    </div>
+                </li>
+                <li class="MMenu_Item">
+                    <a class="MMenu_Tit_a" href="">下载中心</a>
+                    <div class="MMenu2_Drop">
+                    </div>
+                </li>
+                <li class="MMenu_Item">
+                    <a class="MMenu_Tit_a" href="">在线商城</a>
+                    <div class="MMenu2_Drop">
+                    </div>
+                </li>
+                <li class="MMenu_Item">
+                    <a class="MMenu_Tit_a" href="">关于钰晰</a>
+                    <div class="MMenu2_Drop">
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="MBg"></div>
+    <div id="Hold"></div>
+</div>
+    <div class="header">
+        <div class="layout">
+            <div class="logo"><img src="images/logo.png" class="png-" onclick="location.href=index.html" style="cursor:pointer;" /><!--<a href="index.html" alt="Geely-" title="Geely-" class="png-"></a>--></div>
+            <ul class="nav" id="nav">
+                <li class="nav-tl"><a href="index.html" >首页</a></li>
+                <li class="nav-tl"> <a href="e-commerce.html" >解决方案</a>
+                    <div class="sub fangan_nav tteshu">
+                        <div class="fl">
+                            <div class="img"> <img src="images/nav_1.jpg"/> </div>
+                            <div class="txt">
+                                <h1>解决方案</h1>
+                                <h2>钰晰信息专业的技术团队，实现在电子商务、互联网+、物流行业、银行系统、医疗行业、酒店餐饮、O2O、P2P等多方面的应用。<br />
+                                    &nbsp;</h2>
+                            </div>
+                        </div>
+                        <div class="fr">
+                            <ul class="nav_li">
+                                <li><a href="e-commerce.html">电子商务</a></li>
+                                <li><a href="internet.html">互联网+</a></li>
+                                <li><a href="logistics.html">物流行业</a></li>
+                                <li><a href="banking-system.html">银行系统</a></li>
+                                <li><a href="medical-industry.html">医疗行业</a></li>
+                                <li><a href="catering.html">酒店餐饮</a></li>
+                                <li><a href="otoo.html">O2O</a></li>
+                                <li><a href="ptop.html">P2P</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-tl">
+                    <a href="sms-test.html">产品中心</a>
+                    <div class="sub prosemenu">
+                        <div class="fl">
+                            <div class="top">
+                                <div class="img"> <img src="images/Uploads/2016/08/01/sjdx.jpg"/></div>
+                                <div class="txt">
+                                    <h1>短信验证码</h1>
+                                    <h3>短信验证码，5秒必达</h3>
+                                    <a href="sms-test.html">learn more</a> </div>
+                                <div class="clr"></div>
+                            </div>
+                            <div class="top mt26">
+                                <div class="img"> <img src="images/Uploads/2016/08/01/hyyxdx.jpg"/></div>
+                                <div class="txt">
+                                    <h1>行业营销短信</h1>
+                                    <h3>行业营销短信，10秒即到</h3>
+                                    <a href="marketing-sms.html">learn more</a> </div>
+                                <div class="clr"></div>
+                            </div>
+
+                        </div>
+                        <div class="fl">
+                            <div class="top">
+                                <div class="img"> <img src="images/Uploads/2016/08/01/sjcx.jpg"/></div>
+                                <div class="txt">
+                                    <h1>行业手机彩信</h1>
+                                    <h3>统一提交计费<br />
+                                        多通道实现自动分发</h3>
+                                    <a href="mms.html">learn more</a> </div>
+                            </div>
+                            <div class="top mt26">
+                                <div class="img"> <img src="images/Uploads/2016/08/01/qyll.jpg"/></div>
+                                <div class="txt">
+                                    <h1>企业流量</h1>
+                                    <h3>定向流量（流量800）<br />
+                                        通用流量（流量100）</h3>
+                                    <a href="business-flow.html">learn more</a> </div>
+                                <div class="clr"></div>
+                            </div>
+                        </div>
+                        <div class="fl">
+                            <div class="top">
+                                <div class="img"> <img src="images/Uploads/2016/08/01/yyyz.jpg"/></div>
+                                <div class="txt">
+                                    <h1>语音验证</h1>
+                                    <h3>支持企业通讯录<br />
+                                        个人通讯录的语音验证 </h3>
+                                    <a href="voice-verification.html">learn more</a> </div>
+                                <div class="clr"></div>
+                            </div>
+                            <div class="top mt26">
+                                <div class="img"> <img src="images/Uploads/2016/08/01/gjyw.jpg"/></div>
+                                <div class="txt">
+                                    <h1>国际业务</h1>
+                                    <h3>支持200多个国家地区<br />
+                                        支持中英文编码 </h3>
+                                    <a href="international-authentication.html">learn more</a> </div>
+                                <div class="clr"></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-tl">
+                    <a href="application-case.html">应用案例</a>
+                    <div class="sub fangan_nav">
+                        <div class="fl">
+                            <div class="img"> <img src="images/Uploads/uploads/150825/1-150R5144550b8.jpg"/></div>
+                            <div class="txt">
+                                <h1>应用案例</h1>
+                                <p>截止今天，钰晰信息已服务于8万个客户案例。</p>
+                            </div>
+                        </div>
+                        <div class="fr">
+                            <ul class="nav_li">
+                                <li><a href="ecommerce-case.html">电子商务</a></li>
+                                <li><a href="internet-case.html">互联网+</a></li>
+                                <li><a href="logistics-case.html">物流行业</a></li>
+                                <li><a href="black-case.html">银行系统</a></li>
+                                <li><a href="medical-case.html">医疗行业</a></li>
+                                <li><a href="catering-case.html">酒店餐饮</a></li>
+                                <li><a href="otoo-case.html">O2O</a></li><li><a href="ptop-case.html">P2P</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-tl"> <a href="download-center.html">下载中心</a>
+                    <div class="sub fangan_nav">
+                        <div class="fl">
+                            <div class="img"> <img src="images/Uploads/2016/08/01/xzzx.1.jpg"/></div>
+                            <div class="txt">
+                                <h1>下载中心</h1>
+                                <p>钰晰信息专业提供SMS行业短信、MMS行业彩信、企业流量统付、电信增值服务等移动信息化系统平台业务。</p>
+                            </div>
+                        </div>
+                        <div class="fr">
+                            <ul class="nav_li">
+                                <li><a href="service-class.html">服务类</a></li>
+                                <li><a href="industry-platform.html">行业平台</a></li>
+                                <li><a href="identifyingcode-platform.html">验证码平台</a></li>
+                                <li><a href="sms-platform.html">综合SMS平台</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-tl"> <a href="online-mall.html">在线商城</a>
+                    <div class="sub fangan_nav">
+                        <div class="fl">
+                            <div class="img"> <img src="images/Uploads/2016/08/01/zxsc.1.jpg"/></div>
+                            <div class="txt">
+                                <h1>在线商城</h1>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-tl"> <a href="aboutus.html">关于钰晰</a>
+                    <div class="sub fangan_nav">
+                        <div class="fl">
+                            <div class="img"> <img src="images/Uploads/2016/08/01/gywm.1.jpg"/></div>
+                            <div class="txt">
+                                <h1>关于钰晰</h1>
+                                <p>钰晰信息专业提供SMS行业短信、MMS行业彩信、企业流量统付、电信增值服务等移动信息化系统平台业务。</p>
+                            </div>
+                        </div>
+                        <div class="fr">
+                            <ul class="nav_li">
+                                <li><a href="aboutus.html">公司简介</a></li>
+                                <li><a href="idea.html">公司理念</a></li>
+                                <li><a href="process.html">合作流程</a></li>
+                                <li><a href="aptitude.html">公司资质</a></li>
+                                <li><a href="recruitment.html">招贤纳士</a></li>
+                                <li><a href="contactus.html">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <script type="text/javascript">
+
+                jQuery("#nav").slide({ type:"menu", titCell:".nav-tl", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+
+            </script>
+
+        </div>
+    </div>
+
+<div class="ny_main">
+    <div class="ny_banner" style="background-image:url(../images/Uploads/uploads/150817/1-150QG03F9358.jpg); background-position:top center; background-repeat: no-repeat; background-size:100%; height:465.64px; ">
+
+
+
+        <div class="txt">
+
+            <h1>应用案例</h1>
+
+            <h2>钰晰科技——行业先进SMS短信平台</h2>
+
+        </div>
+
+        <div id="nav_fix">
+
+            <div class="scrollBar ny_nav">
+
+                <div class="ny_li w1025">
+
+                    <ul>
+                        <li>
+
+                            <a  href="ecommerce-case.html">
+
+                                电子商务
+                            </a>
+
+                        </li><li>
+
+                        <a  href="internet-case.html">
+
+                            互联网+
+                        </a>
+
+                    </li><li>
+
+                        <a  href="logistics-case.html">
+
+                            物流行业
+                        </a>
+
+                    </li><li>
+
+                        <a  href="black-case.html">
+
+                            银行系统
+                        </a>
+
+                    </li><li>
+
+                        <a  href="medical-case.html">
+
+                            医疗行业
+                        </a>
+
+                    </li><li>
+
+                        <a  href="catering-case.html">
+
+                            酒店餐饮
+                        </a>
+
+                    </li><li>
+
+                        <a  href="otoo-case.html">
+
+                            O2O
+                        </a>
+
+                    </li><li>
+
+                        <a  href="ptop-case.html">
+
+                            P2P
+                        </a>
+
+                    </li>                    </ul>
+
+                    <div class="clr"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="Sort">
+            <a  href="ecommerce-case.html">电子商务</a>
+            <a  href="internet-case.html">互联网+</a>
+            <a  href="logistics-case.html">物流行业</a>
+            <a  href="black-case.html">银行系统</a>
+            <a  href="medical-case.html">医疗行业</a>
+            <a  href="catering-case.html">酒店餐饮</a>
+            <a  href="otoo-case.html">O2O</a>
+            <a  href="ptop-case.html">P2P</a>
+        </div>
+    </div>
+    <div class="case_main">
+    <div class="w1025 ny_case">
+      <h1>乐视网</h1>
+      <h2 class="page_title"> <span>日期：2016-08-16</span> <span>点击：
+        <script src="../plus/count.html" type='text/javascript' language="javascript"></script>
+        </span> <span><a href="#">打印<i class="icon icon_9"></i></a></span>  <span>
+        <div class="bshare-custom"> <a title="分享到QQ空间" class="bshare-qzone"></a> <a title="分享到新浪微博" class="bshare-sinaminiblog"></a> <a title="分享到人人网" class="bshare-renren"></a> <a title="分享到腾讯微博" class="bshare-qqmb"></a> <a title="分享到网易微博" class="bshare-neteasemb"></a> <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a> <span class="BSHARE_COUNT bshare-share-count">0</span> </div>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+        <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+        </span> </h2>
+      <div class="show_ny"> <b>导读：</b>网站中大量嵌入短信接口，不仅提高了用户体验度，而且收集到的用户数据，也成为助通和乐视最宝贵的一项资产。</br>
+      </div>
+      <div class="clear"><div style="float:left;width:650px;"><p style="line-height:2em;text-indent:0em;margin-bottom:20px;"><span style="font-family:微软雅黑, &#39;microsoft yahei&#39;;color:#3f3f3f;font-size:16px;">乐视互联网生态系统从本质上先是一家科技互联网公司，除了为云视频用户提供基础的全视频技术支持和服务，还通过整合“平台+内容+终端+应用”的乐视生态产业链资源， 为用户带来增值服务和品牌推广等，实现更大程度上的共赢。</span></p><p style="line-height:2em;margin-bottom:20px;"><span style="font-family:微软雅黑, &#39;microsoft yahei&#39;;color:#3f3f3f;font-size:16px;">客户痛点<br />用户隐私信息一旦泄露，容易导致被交叉营销骚扰，甚至用户从平台流失。无号呼叫不仅能有效保护用户隐私，同时又能满足服务商和买家之间的实时通话需求。<br />快递单上寄送人的联络方式直接暴露，在物流的过程中有泄漏的风险。 </span></p><p style="line-height:2em;margin-bottom:20px;"><span style="font-family:微软雅黑, &#39;microsoft yahei&#39;;color:#3f3f3f;font-size:16px;">解决方案<br />1、 手机登录、手机找回密码、开通手机动态密码、账户异常安全短信提醒等；<br />2 、卖家能享受到付款通知、发货通知及跟踪物流状态查 询等等；<br />3 、支付功能：手机动态口令、无线支付、安全保护问题、手机号码登录、手机开启 &nbsp;/关闭余额支付功能、手机管理数字证书等。<br /></span><span style="color:#3f3f3f;font-family:微软雅黑, &#39;microsoft yahei&#39;;line-height:2em;text-indent:2em;font-size:16px;">此外，基于数据库挖掘的短信应用（客情关系维护、针对性短信营销、市场推广的短信推送）。<br /></span><span style="color:#3f3f3f;font-family:微软雅黑, &#39;microsoft yahei&#39;;line-height:2em;text-indent:2em;font-size:16px;">1、乐视网上海站针对上海用户进行大面积推广短信发送、2011 年双 11 双促销，当天发送三千万条促销短信。</span><span style="line-height:2em;color:#3f3f3f;font-family:微软雅黑, &#39;microsoft yahei&#39;;text-indent:2em;font-size:16px;">2</span><span style="line-height:2em;color:#3f3f3f;font-family:微软雅黑, &#39;microsoft yahei&#39;;text-indent:2em;font-size:16px;">、例如会员个性化生日短信提醒，短信内容附加生日特权；会员等级积分变动提醒等。</span></p><p style="line-height:2em;margin-bottom:20px;"><span style="color:#3f3f3f;font-family:微软雅黑, &#39;microsoft yahei&#39;;line-height:2em;text-indent:2em;font-size:16px;">在移动电子商务应用助通不限于短信，含 APP、二维码、手机支付等技术的综合应用使用手机旺铺; 手机二维码。企业内部系统可通过相应接口与短信平台进行对接， 轻松为企业内部原有系统实现短信解决方案。</span></p><p style="line-height:2em;margin-bottom:20px;"><span style="color:#3f3f3f;font-family:微软雅黑, &#39;microsoft yahei&#39;;line-height:2em;text-indent:2em;font-size:16px;">网站中大量嵌入短信接口，不仅提高了用户体验度，而且收集到的用户数据，也成为助通和乐视最宝贵的一项资产。</span></p></div><div style="float:right"><p><img src="../images/Uploads/20160816/ls.jpg" title="3乐视.jpg" /></p></div> &nbsp;<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> &nbsp;<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> &nbsp; &nbsp;<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>      <div class="proshow_page">
+        <!--  <ul class="page_left">
+
+                         <li><span>上一篇： </span><a href='../case/classic/56.html'>上海卫校</a> </li>
+
+                         <li><span>下一篇： </span><a href='../case/classic/58.html'>西峡电力</a> </li>
+
+                       </ul> -->
+        <div style="display:none;">
+          <div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div>
+          <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+          <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+        </div>
+
+        <ul class="page_right">
+          <li class="platI" style="position:relative;">
+		 <img class="plat" style="width:200px; height:200px;  position:absolute; bottom:80px;left: -85px; display:none;" src="../images/wx.jpg" />
+		  <a href="javascript:bShare.share(event,'weixin');return false;">
+            <div class="img"><i class="icon icon_3"></i></div>
+            <h2>二维码</h2>
+            </a></li>
+          <li style="position:relative;"><a href="javascript:history.go(-1);">
+            <div class="img"><i class="icon icon_7"></i></div>
+            <h2>返回</h2>
+            </a></li>
+        </ul>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bottom" style="background:#f1f1f1">
+  <div class="w1025"> <span>Copyright ©2011-2016 Copyright＠ 2011 - 2016 <a href="#">上海助通信息科技限公司</a> 地址：上海市闵行区顾戴路2959号中展大厦3层</span> <span class="bottom_i"><i class="icon_1"></i><a href="../index.html#">zhuyunjie@ztinfo.cn </a><i class="icon_2"></i>400 008 7058</span>
+  </div>
+   
+</div>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$(window).scroll(function(){
+
+		var toTopHeight = $("#nav_fix").offset().top;
+
+		var toHeight = $("#nav_fix").outerHeight();
+
+		//var toBottomHeight = $(".pro_cuxiao").offset().top; /*20131025j*/
+
+		//if ($(window).scrollTop() >= toTopHeight && $(window).scrollTop() <= toBottomHeight-toHeight) {/*20131025j*/
+
+		if ($(window).scrollTop() >= toTopHeight ) { /*20131025j*/
+
+		  $(".scrollBar").addClass("nav_fixed");
+
+		} else{
+
+		  $(".scrollBar").removeClass("nav_fixed");
+
+		};
+
+	});
+
+$(".platI").mouseenter(function(){
+	$(".plat").css("display","block");
+});
+$(".platI").mouseleave(function(){
+	$(".plat").css("display","none");
+});
+
+});
+
+</script>
+</body>
+</html>

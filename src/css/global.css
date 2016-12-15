@@ -158,7 +158,7 @@ table {
 
 	height: 12px;
 
-	background: url(..\images\why_geele_line.png) no-repeat;
+	background: url(../images/why_geele_line.png) no-repeat;
 
 }
 
@@ -294,7 +294,7 @@ table {
 
 	height: 72px;
 
-	overflow: visible!important;  background:url(..\images\header_bg.jpg) repeat-x;
+	overflow: visible!important;  background:url(../images/header_bg.jpg) repeat-x;
 
 }
 
